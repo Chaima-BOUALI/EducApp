@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>WIFI GRATUIT</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Le styles -->
+        <link href="http://cdn.omniup.com:81/assets/bootstrap2/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="http://cdn.omniup.com:81/assets/bootstrap2/css/bootstrap-responsive.min.css" rel="stylesheet" />
+         <style type="text/css">
+            @font-face{
+                font-family:Lato;
+                font-style:normal;
+                font-weight:100;
+                src:local('Lato Hairline'),local('Lato-Hairline'),url(css/woff/1.woff) format('woff');
+            }
+            @font-face{
+                font-family:Lato;
+                font-style:normal;
+                font-weight:300;
+                src:local('Lato Light'),local('Lato-Light'),url(css/woff/3.woff) format('woff');
+            }
+        </style>
+        <link rel="stylesheet" href="http://cdn.omniup.com:81/assets/css/screen.css?ts=1635359706" />
+        <link rel="stylesheet" href="css/override.css" />
+        
+
+        <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+           <script src="http://cdn.omniup.com:81/assets/js/html5.js"></script>
+        <![endif]-->
+
+        <!-- Le favicon -->
+        <link rel="shortcut icon" href="favicon.ico">       
+        <!-- Placed at the end of the document so the pages load faster -->        
+    </head>
+
+    <body class="gradient4">
+        <div class="container"><style>
+#login-wraper{position: relative;top: 0;margin-top:25px;}.navbar-fixed-bottom{position: relative;}
+    
+
+</style>
+
+<div id="login-wraper">
+			<br>	
+	    <div class="row-fluid form-lang-switcher">
+        <ul class="flagul"> 
+     <li class="flagli">
+        <a title="Arabic" class="linkflag" href="http://wp.omniup.com/v4/?nwid=3491&uid=f8%3A5e%3Aa0%3A91%3Ac3%3A73&control=90285865&gwip=10.1.0.1&gwid=b0%3A95%3A75%3A42%3A6e%3A88&gwport=3990&lang=ar">
+            <img src="partials/flags/ma.png" alt="Arabe" />
+        </a>
+    </li>
+    <li class="flagli">
+        <a title="Spanish" class="linkflag" href="http://wp.omniup.com/v4/?nwid=3491&uid=f8%3A5e%3Aa0%3A91%3Ac3%3A73&control=90285865&gwip=10.1.0.1&gwid=b0%3A95%3A75%3A42%3A6e%3A88&gwport=3990&lang=es">
+            <img src="partials/flags/es.png" alt="Espagnole" />
+        </a>
+    </li>
+    <li class="flagli">
+        <a title="Frensh" class="linkflag" href="http://wp.omniup.com/v4/?nwid=3491&uid=f8%3A5e%3Aa0%3A91%3Ac3%3A73&control=90285865&gwip=10.1.0.1&gwid=b0%3A95%3A75%3A42%3A6e%3A88&gwport=3990&lang=fr">
+            <img src="partials/flags/fr.png" alt="Français" />
+        </a>
+    </li>   
+    <li class="flagli">
+        <a title="English" class="linkflag" href="http://wp.omniup.com/v4/?nwid=3491&uid=f8%3A5e%3Aa0%3A91%3Ac3%3A73&control=90285865&gwip=10.1.0.1&gwid=b0%3A95%3A75%3A42%3A6e%3A88&gwport=3990&lang=en">
+            <img src="partials/flags/en.png" alt="Anglais" />
+        </a>
+    </li>
+</ul>    </div><hr />
+        <form id="idForm" class="form login-form" onsubmit="return(validate_login_form());" method="post">
+        <legend><span class="hs_title">WIFI GRATUIT</span></legend>       
+        <div class="body">           
+            <div class="row-fluid row-mb10">
+                <label class="lbl-form row-mb10">Age</label>
+                <select id="age" name="age">
+                    <option value="">Choose an option</option>
+                    <option value="<18"> Under 18</option>
+                    <option value="18-25">Between 18 and 25</option>
+                    <option value="26-35">Between 26 and 35</option>
+                    <option value="36-45">Between 36 and 45</option>
+                    <option value="46-55">Between 46 and 55</option>
+                    <option value="56-65">Between 56 and 65</option>
+                    <option value=">65">65+</option>                                
+                </select>
+            </div>
+
+            <div class="row-fluid row-mb10">
+                <label class="lbl-form row-mb10">Gender</label>
+                <label class="radio inline">
+                    <input type="radio" name="gender" id="optionsRadios1" value="m">
+                    Male                </label>
+                <label class="radio inline">
+                    <input type="radio" name="gender" id="optionsRadios2" value="f">
+                    Female                </label>
+            </div>           
+        </div>
+        <input type="hidden" name="register" value="1" />
+
+        <div class="footer">
+            <div class="row-fluid">
+                <button type="submit" value="register" class="btn btn-info">Free Internet access</button>                        
+            </div>            
+            <label class="terms">
+                <span class="small">By clicking this button, you confirm that you have read and accepted the<br/><a class="text-info" target="_blank" href="http://wp.omniup.com/terms.php">Terms of Service</a>.</span><br />
+            </label>            
+        </div>
+    </form>
+                       
+</div><!-- end login wrapper -->
+
+
+
+
+</div> <!-- End container -->
+
+<footer class="white navbar-fixed-bottom">           
+    <b>Solution fournie par OMNIUP</b></footer>
+
+<!-- javascript  -->
+<script src="http://cdn.omniup.com:81/assets/jquery/jquery-1.11.0.min.js"></script>
+<script src="http://cdn.omniup.com:81/assets/bootstrap2/js/bootstrap.min.js"></script>
+<script>
+    /**
+     * Login
+     */
+     function validate_login_form() {
+
+        var age = $('#age').val();
+        var gender = $('input[name=gender]:checked').val();
+        //$("#myform input[type='radio']:checked").val();
+
+        if (typeof age === "undefined" || !age)
+        {
+            alert("Select your age range");
+            return false;
+        }
+        if (typeof gender === "undefined" || !gender)
+        {
+            alert("Select your gender");
+            return false;
+        }
+            
+    	$.ajax({
+           type: "POST",
+           url: 'https://wp.omniup.com/v4/?nwid=3491&uid=f8%3A5e%3Aa0%3A91%3Ac3%3A73&control=90285865&gwip=10.1.0.1&gwid=b0%3A95%3A75%3A42%3A6e%3A88&gwport=3990',
+           data: $("#idForm").serialize(), // serializes the form's elements.
+           success: function(data)
+           {
+               location.reload(true);
+           }
+         });
+        $("button[type='submit']").attr('disabled', 'disabled').text("Processing...");
+        return false;
+    }
+    
+
+    
+</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="200.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.controllers.backoffice.sessions.ItemController">
+   <children>
+      <ImageView fx:id="image" fitHeight="150.0" fitWidth="200.0" layoutX="38.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@https:/upload.wikimedia.org/wikipedia/fr/thumb/2/2e/Java_Logo.svg/1200px-Java_Logo.svg.png" />
+         </image></ImageView>
+      <VBox layoutX="233.0" prefHeight="200.0" prefWidth="452.0">
+         <children>
+            <Label fx:id="nom" prefHeight="15.0" prefWidth="141.0" text="JAVA">
+               <VBox.margin>
+                  <Insets left="10.0" top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="description" prefHeight="51.0" prefWidth="442.0" text="re recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsu">
+               <VBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="64.0" prefWidth="452.0">
+               <children>
+                  <Label fx:id="from" text="De 15/06/2021">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="to" text="A 15/07/2021">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <Button mnemonicParsing="false" text="Afficher">
+               <VBox.margin>
+                  <Insets left="350.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

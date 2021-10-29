@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="736.0" prefWidth="1219.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.controllers.backoffice.sessions.IndexController">
+   <children>
+      <TableView fx:id="sessions" layoutX="240.0" layoutY="135.0" onMouseClicked="#SelectItem" prefHeight="345.0" prefWidth="943.0">
+        <columns>
+          <TableColumn fx:id="nom" prefWidth="201.0" text="Nom" />
+          <TableColumn fx:id="start_Date" prefWidth="175.0" text="Date Debut" />
+            <TableColumn fx:id="end_Date" prefWidth="164.0" text="Date Fin" />
+            <TableColumn fx:id="category" minWidth="0.0" prefWidth="150.0" text="Category" />
+            <TableColumn fx:id="place_disponible" maxWidth="249.0" prefWidth="249.0" text="Place Disponible" />
+        </columns>
+      </TableView>
+      <Label layoutX="240.0" layoutY="25.0" prefHeight="49.0" prefWidth="344.0" text="Liste des Sessions">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Button layoutX="240.0" layoutY="82.0" mnemonicParsing="false" onAction="#redirectTonewSession" prefHeight="31.0" prefWidth="249.0" style="-fx-background-color: #51c4d3;" text="+ Ajouter une nouvelle session" textFill="WHITE" />
+      <Button layoutX="505.0" layoutY="82.0" mnemonicParsing="false" onAction="#Delete" prefHeight="31.0" prefWidth="111.0" style="-fx-background-color: #fb3640;" text="Supprimer" textFill="WHITE" />
+      <Button layoutX="632.0" layoutY="82.0" mnemonicParsing="false" onAction="#Edit" prefHeight="31.0" prefWidth="127.0" style="-fx-background-color: #ff9a8c;" text="Modifier" textFill="WHITE" />
+      <TextField fx:id="tfrecherche" layoutX="847.0" layoutY="82.0" onKeyReleased="#Search" prefHeight="31.0" prefWidth="334.0" promptText="Rechercher une session" />
+      <ImageView fx:id="image" fitHeight="150.0" fitWidth="200.0" layoutX="240.0" layoutY="488.0" pickOnBounds="true" preserveRatio="true" />
+      <TableView fx:id="users" layoutX="610.0" layoutY="498.0" prefHeight="200.0" prefWidth="571.0">
+        <columns>
+          <TableColumn fx:id="user_nom" prefWidth="125.0" text="Nom" />
+          <TableColumn fx:id="user_prenom" prefWidth="176.0" text="Prenom" />
+            <TableColumn fx:id="user_mail" prefWidth="269.0" text="Email" />
+        </columns>
+      </TableView>
+      <VBox alignment="TOP_CENTER" layoutX="-3.0" layoutY="3.0" prefHeight="736.0" prefWidth="218.0">
+         <children>
+            <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#ToSessionIndex" text="Gestion des sessions">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#ToCategoryIndex" text="Gestion des categories">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <HBox layoutX="247.0" layoutY="646.0" prefHeight="79.0" prefWidth="344.0">
+         <children>
+            <Label fx:id="description" text="Label" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

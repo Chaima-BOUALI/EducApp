@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="736.0" prefWidth="1219.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.controllers.backoffice.category.FormController">
+   <children>
+      <Button layoutX="838.0" layoutY="678.0" mnemonicParsing="false" onAction="#SaveCategory" opacity="0.89" prefHeight="31.0" prefWidth="295.0" style="-fx-background-color: green;" text="Enregistrer" textFill="WHITE" />
+      <Label fx:id="ltitre" layoutX="284.0" layoutY="54.0" prefHeight="49.0" prefWidth="563.0" text="Ajouter une nouvelle Categorie">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="ImagePub" fitHeight="150.0" fitWidth="278.0" layoutX="284.0" layoutY="538.0" pickOnBounds="true" preserveRatio="true" />
+      <TextField fx:id="Imagepath" layoutX="135.0" layoutY="662.0" opacity="0.0" prefHeight="31.0" prefWidth="278.0" />
+      <VBox layoutX="284.0" layoutY="153.0" prefHeight="360.0" prefWidth="873.0">
+         <children>
+            <HBox prefHeight="52.0" prefWidth="873.0">
+               <children>
+                  <Label text="Nom">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="tfNom" prefHeight="31.0" prefWidth="739.0">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="36.0" prefWidth="873.0">
+               <children>
+                  <Label fx:id="nomError" prefHeight="21.0" prefWidth="473.0" text="Le champs nom est obligatoire" textFill="#f80202">
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="216.0" prefWidth="873.0">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="110.0" text="Description">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextArea fx:id="tfDescription" prefHeight="252.0" prefWidth="665.0">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </TextArea>
+               </children>
+            </HBox>
+            <HBox prefHeight="41.0" prefWidth="873.0">
+               <children>
+                  <Label fx:id="descriptionError" prefHeight="21.0" prefWidth="473.0" text="Le champs description est obligatoire" textFill="#f80202">
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" prefHeight="749.0" prefWidth="218.0">
+         <children>
+            <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#ToSessionIndex" text="Gestion des sessions">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#ToCategoryIndex" text="Gestion des categories">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
