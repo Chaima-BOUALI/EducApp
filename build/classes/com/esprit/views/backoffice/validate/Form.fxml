@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="201.0" prefWidth="455.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.controllers.backoffice.validate.FormController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="233.0" prefWidth="455.0">
+         <children>
+            <TextField fx:id="tfUsername" layoutX="15.0" layoutY="94.0" prefHeight="25.0" prefWidth="425.0" promptText="Nom utilisateur" />
+            <Line endX="100.0" layoutX="118.0" layoutY="85.0" startX="-100.0" />
+            <HBox layoutY="200.0" prefHeight="38.0" prefWidth="455.0">
+               <children>
+                  <Button fx:id="btnvalidate" mnemonicParsing="false" onAction="#SaveValidate" prefHeight="42.0" prefWidth="225.0" style="-fx-background-color: #90EE90;" text="Valider le paiement" textFill="#4d4949">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnDrop" mnemonicParsing="false" onAction="#DropValidate" prefHeight="46.0" prefWidth="231.0" style="-fx-background-color: #20B2AA;" text="Go Back" textFill="#4d4949">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <Text fx:id="ltitre" fill="DARKCYAN" layoutX="-21.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" style="visibility: 20B2AA;" text="Consulter la validité du paiement " textAlignment="CENTER" wrappingWidth="482.0">
+               <font>
+                  <Font name="System Italic" size="19.0" />
+               </font>
+            </Text>
+            <TextField fx:id="tfvalidate" layoutX="15.0" layoutY="149.0" prefHeight="25.0" prefWidth="425.0" promptText="Paiement Validé?" />
+            <Line endX="100.0" layoutX="118.0" layoutY="141.0" startX="-100.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

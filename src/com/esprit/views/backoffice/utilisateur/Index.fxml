@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="320.0" prefWidth="843.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.controllers.backoffice.utilisateur.IndexController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#074d1d" height="29.0" stroke="BLACK" strokeType="INSIDE" width="846.0" />
+      <Text fill="#fcf6f6" layoutX="338.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gérer les utilisateurs ">
+         <font>
+            <Font name="System Italic" size="19.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tvUtilisateur" layoutX="8.0" layoutY="69.0" onMouseClicked="#SelectItem" prefHeight="200.0" prefWidth="831.0" style="-fx-background-color: #F5DEB3;">
+        <columns>
+          <TableColumn fx:id="Colusername" prefWidth="72.0" text="Username" />
+          <TableColumn fx:id="Colid" prefWidth="84.0" text="Identifiant" />
+            <TableColumn fx:id="Colpassword" prefWidth="91.0" text="Password" />
+            <TableColumn fx:id="Colnom" prefWidth="62.0" text="Nom" />
+            <TableColumn fx:id="Colsexe" prefWidth="83.0" text="Sexe" />
+            <TableColumn fx:id="ColnumCB" prefWidth="187.0" text="Numéro de la Carte Bancaire" />
+            <TableColumn fx:id="Colrole" minWidth="0.0" prefWidth="57.0" text="Rôle" />
+            <TableColumn fx:id="Colemail" prefWidth="51.0" text="Email" />
+            <TableColumn fx:id="colnumTel" prefWidth="144.0" text="Numéro de téléphone" />
+        </columns>
+      </TableView>
+      <TextField fx:id="tfrecherche" alignment="CENTER" layoutX="249.0" layoutY="36.0" onKeyReleased="#Rechercher" prefHeight="25.0" prefWidth="362.0" promptText="Chercher un utilisateur" />
+      <HBox layoutX="1.0" layoutY="291.0" prefHeight="29.0" prefWidth="845.0">
+         <children>
+            <Button fx:id="btnAjout" mnemonicParsing="false" onAction="#Ajout" prefHeight="29.0" prefWidth="297.0" style="-fx-background-color: #90EE90;" text="Ajouter un utilisateur" textFill="#6b6161">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSupprimer" mnemonicParsing="false" onAction="#Supprimer" prefHeight="29.0" prefWidth="281.0" style="-fx-background-color: #66CDAA;" text="Supprimer un utilisateur" textFill="#655c5c">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnAnnuler" mnemonicParsing="false" onAction="#Annuler" prefHeight="29.0" prefWidth="271.0" style="-fx-background-color: #20B2AA;" text="Annuler" textFill="#5b5656">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

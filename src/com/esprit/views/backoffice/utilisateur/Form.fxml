@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="604.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.controllers.backoffice.utilisateur.FormController">
+   <children>
+      <Text fx:id="ltitre" fill="DARKCYAN" layoutX="67.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter un utilisateur" textAlignment="CENTER" wrappingWidth="465.216796875">
+         <font>
+            <Font name="System Italic" size="19.0" />
+         </font>
+      </Text>
+      <TextField fx:id="tfusername" layoutX="15.0" layoutY="108.0" prefHeight="25.0" prefWidth="570.0" promptText="Insérer le username" />
+      <Line endX="100.0" layoutX="115.0" layoutY="146.0" startX="-100.0" />
+      <Line endX="100.0" layoutX="115.0" layoutY="98.0" startX="-100.0" />
+      <TextField fx:id="tfid" layoutX="15.0" layoutY="156.0" prefHeight="25.0" prefWidth="570.0" promptText="Insérer l'identifiant" />
+      <TextField fx:id="tfpassword" layoutX="15.0" layoutY="200.0" prefHeight="25.0" prefWidth="570.0" promptText="Insérer le mot de passe" />
+      <Line endX="100.0" layoutX="115.0" layoutY="191.0" startX="-100.0" />
+      <Line endX="100.0" layoutX="115.0" layoutY="235.0" startX="-100.0" />
+      <TextField fx:id="tfnum" layoutX="15.0" layoutY="486.0" prefHeight="25.0" prefWidth="570.0" promptText="Insérer le numéro de téléphone" />
+      <TextField fx:id="tfnom" layoutX="15.0" layoutY="244.0" prefHeight="25.0" prefWidth="570.0" promptText="Insérer le nom" />
+      <Line endX="100.0" layoutX="115.0" layoutY="478.0" startX="-100.0" />
+      <Line endX="100.0" layoutX="115.0" layoutY="520.0" startX="-100.0" />
+      <TextField fx:id="tfemail" layoutX="15.0" layoutY="528.0" prefHeight="25.0" prefWidth="570.0" promptText="Insérer l'email" />
+      <TextField fx:id="tfprenom" layoutX="15.0" layoutY="285.0" prefHeight="25.0" prefWidth="570.0" promptText="Insérer le prenom" />
+      <Line endX="100.0" layoutX="115.0" layoutY="277.0" startX="-100.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#012501" height="28.0" layoutY="41.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#012501" height="28.0" layoutY="444.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <Text fill="#fff6f6" layoutX="180.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informations personnelles " textAlignment="CENTER" wrappingWidth="240.5078125">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Text fill="#fff6f6" layoutX="167.0" layoutY="465.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact" textAlignment="CENTER" wrappingWidth="240.5078125">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <HBox layoutY="567.0" prefHeight="36.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="btnSaveUtilisateur" mnemonicParsing="false" onAction="#SaveUtilisateur" prefHeight="53.0" prefWidth="203.0" style="-fx-background-color: #90EE90;" text="Enregistrer" textFill="#6b6969">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnGOBACK" mnemonicParsing="false" onAction="#GOBACK" prefHeight="53.0" prefWidth="203.0" style="-fx-background-color: #66CDAA;" text="Go Back" textFill="#7c7777">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnAnnuler" mnemonicParsing="false" onAction="#Annuler" prefHeight="53.0" prefWidth="203.0" style="-fx-background-color: #20B2AA;" text="Annuler" textFill="#6f6868">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <Line endX="100.0" layoutX="115.0" layoutY="318.0" startX="-100.0" />
+      <TextField fx:id="tfsexe" layoutX="15.0" layoutY="327.0" prefHeight="25.0" prefWidth="570.0" promptText="Insérer le sexe" />
+      <Line endX="100.0" layoutX="115.0" layoutY="360.0" startX="-100.0" />
+      <TextField fx:id="tfnumCB" layoutX="15.0" layoutY="367.0" prefHeight="25.0" prefWidth="570.0" promptText="Insérer le numéro de la Carte Bancaire" />
+      <Line endX="100.0" layoutX="115.0" layoutY="403.0" startX="-100.0" />
+      <TextField fx:id="tfrole" layoutX="15.0" layoutY="409.0" prefHeight="25.0" prefWidth="570.0" promptText="Insérer le role" />
+   </children>
+</AnchorPane>
