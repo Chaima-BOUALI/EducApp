@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="354.0" prefWidth="687.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.controllers.backoffice.ressource.IndexController">
+   <children>
+      <Label fx:id="lTitre" alignment="CENTER" prefHeight="40.0" prefWidth="705.0" style="-fx-background-color: #800000;" text="Liste des ressources" textAlignment="JUSTIFY" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="28.0" />
+         </font>
+      </Label>
+      <HBox layoutX="467.0" layoutY="87.0" prefHeight="25.0" prefWidth="238.0" />
+      <TableView fx:id="tvRessource" layoutX="126.0" layoutY="87.0" onMouseClicked="#SelectItem" prefHeight="214.0" prefWidth="478.0" style="-fx-background-color: #40E0D0;">
+        <columns>
+          <TableColumn fx:id="colnom" prefWidth="74.0" text="Nom" />
+            <TableColumn fx:id="colIdRessource" prefWidth="94.0" text="Id ressources" />
+            <TableColumn fx:id="colTypeRessource" prefWidth="113.0" text="Type ressources" />
+            <TableColumn fx:id="colUrl" prefWidth="92.0" text="URL" />
+            <TableColumn fx:id="colIdSeance" prefWidth="104.0" text="Id séance" />
+        </columns>
+      </TableView>
+      <TextField fx:id="tfrecherche" layoutX="246.0" layoutY="50.0" onKeyReleased="#Rechercher" prefHeight="25.0" prefWidth="237.0" promptText="Rechercher une ressource" />
+      <HBox layoutX="-3.0" layoutY="314.0" prefHeight="40.0" prefWidth="713.0">
+         <children>
+            <Button fx:id="btnModifier" mnemonicParsing="false" onAction="#Modifier" prefHeight="39.0" prefWidth="354.0" style="-fx-background-color: grey;" text="Modifier" textFill="#f2f2f2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSupprimer" mnemonicParsing="false" onAction="#Supprimer" prefHeight="39.0" prefWidth="363.0" style="-fx-background-color: #2E8B57;" text="Supprimer" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

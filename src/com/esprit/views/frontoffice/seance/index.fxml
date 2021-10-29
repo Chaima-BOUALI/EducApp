@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="tvASeance" prefHeight="400.0" prefWidth="587.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.controllers.frontoffice.seance.indexController">
+   <children>
+      <HBox alignment="CENTER_RIGHT" layoutX="-1.0" prefHeight="40.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="lTitre" alignment="CENTER" prefHeight="40.0" prefWidth="608.0" style="-fx-background-color: #800000;" text="Liste des séances" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="28.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <TableView layoutX="42.0" layoutY="111.0" prefHeight="225.0" prefWidth="514.0" style="-fx-background-color: #FDF5E6;">
+        <columns>
+          <TableColumn fx:id="colnom" prefWidth="155.0" text="Nom de la séance" />
+          <TableColumn fx:id="colIdSeance" prefWidth="141.0" text="Id de la séance" />
+            <TableColumn fx:id="coldatePicker" prefWidth="155.0" text="Date de la séance" />
+        </columns>
+      </TableView>
+      <HBox layoutX="383.0" layoutY="76.0" prefHeight="21.0" prefWidth="200.0" />
+      <Button fx:id="btnGoBack" layoutX="185.0" layoutY="347.0" mnemonicParsing="false" onAction="#GoBack" prefHeight="10.0" prefWidth="231.0" style="-fx-background-color: #48D1CC;" text="Go Back" textFill="#ebe7e7">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="tfRecherche" layoutX="200.0" layoutY="74.0" prefHeight="25.0" prefWidth="202.0" promptText="Rechercher" />
+   </children>
+</AnchorPane>

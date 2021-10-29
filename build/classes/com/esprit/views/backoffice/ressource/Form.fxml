@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="319.0" prefWidth="582.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.controllers.backoffice.ressource.FormController">
+   <children>
+      <HBox layoutY="-2.0" prefHeight="35.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="lTitre" alignment="CENTER" prefHeight="40.0" prefWidth="599.0" style="-fx-background-color: #9ACD32;" text="Ajouter une nouvelle ressource" textAlignment="CENTER" textFill="#072c0e">
+               <font>
+                  <Font name="System Italic" size="28.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <VBox layoutX="183.0" layoutY="82.0" prefHeight="237.0" prefWidth="235.0">
+         <children>
+            <TextField fx:id="tfNom" promptText="Nom">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <ComboBox fx:id="cbTypeRessource" prefHeight="25.0" prefWidth="217.0" promptText="TypeRessource">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </ComboBox>
+            <TextField fx:id="tfUrl" promptText="Url">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="tfIdSeance" layoutX="20.0" layoutY="155.0" promptText="idSeance">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <Button fx:id="btnEnregistrer" mnemonicParsing="false" onAction="#saveRessource" prefHeight="4.0" prefWidth="243.0" style="-fx-background-color: #4682B4;" text="Enregistrer" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
