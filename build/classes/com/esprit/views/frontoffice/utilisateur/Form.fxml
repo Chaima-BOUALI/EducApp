@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="277.0" prefWidth="353.0" style="-fx-background-color: #C0C0C0;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.controllers.frontoffice.utilisateur.FormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0c4021" height="48.0" stroke="BLACK" strokeType="INSIDE" width="353.0" />
+      <Text fx:id="ltitre" fill="#eee7e7" layoutX="124.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign in" textAlignment="CENTER" wrappingWidth="104.13671875">
+         <font>
+            <Font name="System Italic" size="19.0" />
+         </font>
+      </Text>
+      <TextField fx:id="tflogin" alignment="CENTER" layoutX="58.0" layoutY="113.0" prefHeight="25.0" prefWidth="236.0" promptText="Add your Login" />
+      <PasswordField fx:id="pfpassword" alignment="CENTER" layoutX="59.0" layoutY="151.0" prefHeight="25.0" prefWidth="236.0" promptText="Password" />
+      <HBox layoutY="238.0" prefHeight="38.0" prefWidth="353.0">
+         <children>
+            <Button fx:id="btnSignIN" mnemonicParsing="false" onAction="#SignIN" prefHeight="45.0" prefWidth="358.0" style="-fx-background-color: #90EE90;" text="Sign in ">
+               <font>
+                  <Font size="21.0" />
+               </font></Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
